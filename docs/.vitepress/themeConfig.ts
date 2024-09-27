@@ -33,12 +33,34 @@ const themeConfig: DefaultTheme.Config = {
 
     ],
 
+    sidebarMenuLabel: "菜单",
+    darkModeSwitchLabel: "切换主题",
+    returnToTopLabel: "回到顶部",
+
     socialLinks: [
         {icon: 'github', link: 'https://github.com/vuejs/vitepress'}
     ],
 
     search: {
-        provider: 'local'
+        provider: 'local',
+        options: {
+            translations: {
+                button: {
+                    buttonText: "文档搜索"
+                },
+                modal: {
+                    displayDetails: "显示详情",
+                    resetButtonTitle: "清楚",
+                    backButtonTitle: "返回",
+                    noResultsText: "未找到相关结果",
+                    footer: {
+                        closeText: "关闭",
+                        selectText: "选择",
+                        navigateText: "切换",
+                    }
+                }
+            }
+        }
     },
 
     docFooter: {
@@ -47,8 +69,13 @@ const themeConfig: DefaultTheme.Config = {
     },
 
     outline: {
-        label: "当前页"
-    }
+        label: "当前页",
+    },
+
+    lastUpdated: {
+        text: "最后更新时间"
+    },
+
 }
 
 export default themeConfig
