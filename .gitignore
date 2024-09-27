@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules
+
+# .vitepress build dist
+dist
+
+# .vitepress dev server temp files
+cache
+
+# Idea configuration
+.idea
